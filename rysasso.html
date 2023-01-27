@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HW 9</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul class="pages">
+    <li class="chat page">
+
+      <div class="chatArea">
+        <div class="infoUsers">
+          <span class="fullName">Имя и фамилия</span>
+          <span>Участники</span>
+        </div>
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Введите сообщение..." />
+    </li>
+    <li class="login page">
+      <div class="form">
+        <!-- <img src="/public/img/00-2.jpg" alt=""> -->
+        <h3 class="title">Введите пожалуйста своё ФИО и ник для дальнейшей авторизации</h3>
+        <input class="usernameInput" type="text" maxlength="14" placeholder="Введите ваше ФИО" />
+        <input class="usernickInput" type="text" maxlength="14" placeholder="Введите ваш nick" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>
